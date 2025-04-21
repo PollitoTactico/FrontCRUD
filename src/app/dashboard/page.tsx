@@ -12,7 +12,7 @@ export default function Dashboard() {
         if (!token) {
             router.replace('/login');
         }
-    }, []);
+    }, [router]);
 
     return (
         <main className="min-h-screen bg-[#F5EEDC] p-8">
