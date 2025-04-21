@@ -1,8 +1,6 @@
 'use client'
 import {useState} from 'react'
 import {useRouter} from 'next/navigation'
-// Remover la importación no utilizada
-// import { Cutive_Mono } from 'next/font/google';
 import axios from 'axios';
 
 export default function RegisterForm() {

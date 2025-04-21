@@ -1,8 +1,6 @@
 'use client';
 import React from 'react';
 
-
-// Definir interface para userData
 interface UserData {
     firstName: string;
     lastName: string;
