@@ -1,5 +1,3 @@
-// Si no se usan, remover las importaciones
-// import { GeistSans, GeistMono } from 'geist/font'
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -25,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="light">
+    <html lang="en" className={`light ${geistSans.variable} ${geistMono.variable}`}>
       <body className="bg-[#578FCA] min-h-screen">
         {children}
       </body>
