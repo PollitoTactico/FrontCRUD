@@ -51,21 +51,32 @@ export default function RegisterForm() {
     };
     return (
         <div className="flex w-full h-screen">
-            <div className="hidden md:flex w-1/2 bg-[#27548A] flex-col justify-center p-12">
-                <h2 className="text-4xl font-bold text-[#F5EEDC] mb-4">Crea tu Cuenta</h2>
-                <p className="text-[#F5EEDC] text-xl">¡Únete a nuestra comunidad!</p>
+            <div className="hidden md:flex w-1/2 bg-[#22A39F] flex-col justify-center p-12 items-center">
+                <h2 className="text-4xl font-bold text-[#F3EFE0] mb-4">¡BIENVENIDO!</h2>
+                <div className="mt-6">
+                    <img src="/register-illustration.svg" alt="Ilustración de registro" className="w-64" />
+                </div>
             </div>
 
-            <div className="w-full md:w-1/2 flex items-center justify-center bg-[#F5EEDC]">
+            <div className="w-full md:w-1/2 flex items-center justify-center bg-[#F3EFE0]">
                 <div className="w-full max-w-md p-8">
-                    <h1 className="text-2xl font-bold mb-6 text-[#183B4E]">Sign Up</h1>
+                    <div className="flex justify-center mb-6">
+                        <div className="text-center">
+                            <div className="flex justify-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[#222222]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                                </svg>
+                            </div>
+                            <h1 className="text-2xl font-bold text-[#222222]">Registrar</h1>
+                        </div>
+                    </div>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <input
                             type="text"
                             placeholder="Nombre"
                             value={formData.firstName}
                             onChange={(e) => setFormData({...formData, firstName: e.target.value})}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <input
@@ -73,7 +84,7 @@ export default function RegisterForm() {
                             placeholder="Apellido"
                             value={formData.lastName}
                             onChange={(e) => setFormData({...formData, lastName: e.target.value})}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <input
@@ -81,7 +92,7 @@ export default function RegisterForm() {
                             placeholder="Correo Electrónico"
                             value={formData.email}
                             onChange={(e) => setFormData({...formData, email: e.target.value})}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <input
@@ -89,7 +100,7 @@ export default function RegisterForm() {
                             placeholder="Número de Teléfono"
                             value={formData.numeroTelefono}
                             onChange={(e) => setFormData({...formData, numeroTelefono: e.target.value})}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <input
@@ -97,7 +108,7 @@ export default function RegisterForm() {
                             placeholder="Fecha de Nacimiento"
                             value={formData.cumpleaños}
                             onChange={(e) => setFormData({...formData, cumpleaños: e.target.value})}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <input
@@ -105,17 +116,17 @@ export default function RegisterForm() {
                             placeholder="Contraseña"
                             value={formData.contraseña}
                             onChange={(e) => setFormData({...formData, contraseña: e.target.value})}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <button 
                             type="submit"
-                            className="w-full bg-[#DDA853] text-[#183B4E] p-2 rounded hover:bg-[#DDA853]/90 font-semibold"
+                            className="w-full bg-[#22A39F] text-[#F3EFE0] p-2 rounded hover:bg-[#22A39F]/90 font-semibold"
                         >
-                            Registrarse
+                            Registrar
                         </button>
-                        <p className="text-center text-sm text-[#183B4E]">
-                            ¿Ya tienes una cuenta? <button onClick={() => router.push('/login')} className="text-[#27548A] hover:text-[#DDA853]">Iniciar Sesión</button>
+                        <p className="text-center text-sm text-[#222222]">
+                            ¿Ya tienes una cuenta? <button onClick={() => router.push('/login')} className="text-[#22A39F] hover:text-[#22A39F]/70">Iniciar Sesión</button>
                         </p>
                     </form>
                 </div>

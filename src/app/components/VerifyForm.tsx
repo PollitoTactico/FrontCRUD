@@ -94,37 +94,49 @@ export default function VerifyForm() {
     };
 
     
-    <p className="text-center text-sm text-[#183B4E]">
+    <p className="text-center text-sm text-[#222222]">
         ¿No recibiste el código? <button 
             type="button" 
             onClick={handleResendCode}
-            className="text-[#27548A] hover:text-[#DDA853]"
+            className="text-[#22A39F] hover:text-[#22A39F]/70"
         >
             Reenviar
         </button>
     </p>
     return (
         <div className="flex w-full h-screen">
-            <div className="hidden md:flex w-1/2 bg-[#27548A] flex-col justify-center p-12">
-                <h2 className="text-4xl font-bold text-[#F5EEDC] mb-4">Verificación</h2>
-                <p className="text-[#F5EEDC] text-xl">Ingresa el código enviado a tu correo</p>
+            <div className="hidden md:flex w-1/2 bg-[#22A39F] flex-col justify-center p-12 items-center">
+                <h2 className="text-4xl font-bold text-[#F3EFE0] mb-4">Verificación</h2>
+                <p className="text-[#F3EFE0] text-xl">Ingresa el código enviado a tu correo</p>
+                <div className="mt-6">
+                    <img src="/register-illustration.svg" alt="Ilustración de verificación" className="w-64" />
+                </div>
             </div>
 
-            <div className="w-full md:w-1/2 flex items-center justify-center bg-[#F5EEDC]">
+            <div className="w-full md:w-1/2 flex items-center justify-center bg-[#F3EFE0]">
                 <div className="w-full max-w-md p-8">
-                    <h1 className="text-2xl font-bold mb-6 text-[#183B4E]">Verificar Cuenta</h1>
+                    <div className="flex justify-center mb-6">
+                        <div className="text-center">
+                            <div className="flex justify-center mb-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[#222222]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                </svg>
+                            </div>
+                            <h1 className="text-2xl font-bold text-[#222222]">Verificar Cuenta</h1>
+                        </div>
+                    </div>
                     <form onSubmit={handleSubmit} className="space-y-4">
                         <input
                             type="text"
                             placeholder="Código de verificación"
                             value={code}
                             onChange={(e) => setCode(e.target.value)}
-                            className="w-full p-2 border border-[#27548A] rounded text-[#183B4E] bg-white focus:outline-none focus:border-[#DDA853]"
+                            className="w-full p-2 border border-[#222222] rounded text-[#222222] bg-white focus:outline-none focus:border-[#22A39F]"
                             required
                         />
                         <button 
                             type="submit"
-                            className="w-full bg-[#DDA853] text-[#183B4E] p-2 rounded hover:bg-[#DDA853]/90 font-semibold"
+                            className="w-full bg-[#22A39F] text-[#F3EFE0] p-2 rounded hover:bg-[#22A39F]/90 font-semibold"
                         >
                             Verificar
                         </button>

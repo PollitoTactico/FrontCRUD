@@ -15,16 +15,16 @@ export default function Dashboard() {
     }, [router]);
 
     return (
-        <main className="min-h-screen bg-[#F5EEDC] p-8">
+        <main className="min-h-screen bg-[#F3EFE0] p-8">
             <div className="max-w-7xl mx-auto">
                 <div className="flex justify-between items-center mb-8">
-                    <h1 className="text-4xl font-bold text-[#183B4E]">Panel de Control</h1>
+                    <h1 className="text-4xl font-bold text-[#222222]">Panel de Control</h1>
                     <button 
                         onClick={() => {
                             Cookies.remove('auth_token');
                             router.push('/login');
                         }}
-                        className="bg-[#27548A] text-[#F5EEDC] px-4 py-2 rounded hover:bg-[#183B4E]"
+                        className="bg-[#22A39F] text-[#F3EFE0] px-4 py-2 rounded hover:bg-[#22A39F]/80"
                     >
                         Cerrar Sesión
                     </button>
