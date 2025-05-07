@@ -59,9 +59,9 @@ export default function LoginForm() {
     return (
         <div className="flex w-full h-screen">
             <div className="hidden md:flex w-1/2 bg-[#22A39F] flex-col justify-center p-12 items-center">
-                <h2 className="text-4xl font-bold text-[#F3EFE0] mb-4">¡BIENVENIDO!</h2>
-                <div className="mt-6">
-                    <img src="/register-illustration.svg" alt="Ilustración de login" className="w-64" />
+                <h2 className="text-6xl font-bold text-[#F3EFE0] mb-8">¡BIENVENIDO DE VUELTA!</h2>
+                <div className="mt-8">
+                    <img src="/Login.svg" alt="Ilustración de login" className="w-96" />
                 </div>
             </div>
 
