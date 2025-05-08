@@ -183,7 +183,7 @@ const HomeMain: React.FC = () => {
                   </select>
                 </div>
               </div>
-              {/* Fila 4: Conocimientos del cargo y Experiencia */}
+           
               <div className="flex gap-6">
                 <div className="flex flex-col flex-1">
                   <label className="block text-[#F3EFE0] font-semibold mb-1">Conocimientos del cargo:</label>
@@ -206,7 +206,7 @@ const HomeMain: React.FC = () => {
                   />
                 </div>
               </div>
-              {/* Fila 5: Funciones Esenciales y Conocimiento Tecnológico */}
+              
               <div className="flex gap-6">
                 <div className="flex flex-col flex-1">
                   <label className="block text-[#F3EFE0] font-semibold mb-1">Funciones Esenciales:</label>
