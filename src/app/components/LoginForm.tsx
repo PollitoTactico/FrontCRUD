@@ -38,7 +38,7 @@ export default function LoginForm() {
                     Cookies.set('auth_token', token, { expires: 7 });
                     localStorage.setItem('token', token);
                     alert('Inicio de sesión exitoso');
-                    router.push('/dashboard');
+                    router.push('/main');
                 } else {
                     throw new Error('No se recibió el token de autenticación');
                 }
